@@ -40,13 +40,10 @@ DinguxCommander allows to:
 Installation
 ------------
 
-As usual:
-
-o Extract the archive, keeping the directory structure
-o Copy the directory 'DinguxCommander' and its contents somewhere on your SD
-  card under '/boot/local' (for example: in /boot/local/apps/)
-o Create a shortcut to DinguxCommander.dge in your favorite menu.
-
+You'll need the compiler and SDL1.2. When those are installed, clone the repository, then build as normal:
+    git clone https://github.com/lfdevvel/dingux_commander/
+    cd dingux_commander
+    CROSS_COMPILE=arm-none-linux-gnueabi- make -f Makefile.lf1000
 
 Controls
 --------
@@ -56,21 +53,21 @@ o L/R           Page up/page down
 o A             For a directory: open
                 For a file: view or execute
 o B             Go to parent directory / cancel
-o Y             System actions:
+o Hint             System actions:
                   - Select all items
                   - Select no items
                   - Create new directory
                   - Display disk information
                   - Quit program
-o X             Actions on selected items:
+o Pause             Actions on selected items:
                   - Copy to destination directory
                   - Move to destination directory
                   - Rename (appears only if 1 item is selected)
                   - Delete
                   - Display disk used
-o SELECT        Select highlighted item.
+o Volume Up        Select highlighted item.
                 Selected items are displayed in red.
-o START         Open highlighted directory in destination panel.
+o Volume Down         Open highlighted directory in destination panel.
                 If a file is highlighted, open current directory in destination panel.
 
 
