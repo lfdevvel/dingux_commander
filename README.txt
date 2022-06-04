@@ -1,5 +1,5 @@
-DinguxCommander for Dingux
---------------------------
+DinguxCommander for Leapster Explorer
+-------------------------------------
 
 
 History
@@ -35,7 +35,7 @@ DinguxCommander allows to:
     o Rename a file or directory
     o Create a new directory
     o Display disk space used by a list of selected files/dirs
-    o Display disk information (used, available, total)
+    o Display disk information (used, available, total) (does not work on Leapster Explorer)
 
 Installation
 ------------
