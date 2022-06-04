@@ -30,7 +30,11 @@ int main(int argc, char** argv)
     SDL_Init(SDL_INIT_VIDEO);
 
     // Screen
-    ScreenSurface = SDL_SetVideoMode(320, 480, SCREEN_BPP, SURFACE_FLAGS);
+    #ifdef PLATFORM_LF1000
+        ScreenSurface = SDL_SetVideoMode(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_BPP, SURFACE_FLAGS);
+    #else
+        ScreenSurface = SDL_SetVideoMode(320, 480, SCREEN_BPP, SURFACE_FLAGS);
+    #endif
     Globals::g_screen = SDL_CreateRGBSurface(SDL_SWSURFACE, SCREEN_WIDTH, SCREEN_HEIGHT, 16, 0, 0, 0, 0);
     if (Globals::g_screen == NULL)
     {

@@ -48,6 +48,23 @@
 #define PATH_DEFAULT        "/home/retrofw"
 #define PATH_DEFAULT_RIGHT  "/media"
 #define FILE_SYSTEM         "/dev/mmcblk0p4"
+#elif defined(PLATFORM_LF1000)
+// Keys for Leapster Explorer
+#define MYKEY_UP            SDLK_UP           // Up
+#define MYKEY_RIGHT         SDLK_RIGHT        // Right
+#define MYKEY_DOWN          SDLK_DOWN         // Down
+#define MYKEY_LEFT          SDLK_LEFT         // Left
+#define MYKEY_OPEN          SDLK_b            // A
+#define MYKEY_PARENT        SDLK_a            // B
+#define MYKEY_SYSTEM        SDLK_h            // Y
+#define MYKEY_OPERATION     SDLK_p            // X
+#define MYKEY_PAGEUP        SDLK_l            // L
+#define MYKEY_PAGEDOWN      SDLK_r            // R
+#define MYKEY_SELECT        SDLK_u            // SELECT
+#define MYKEY_TRANSFER      SDLK_d            // START
+#define PATH_DEFAULT        "/roms"
+#define PATH_DEFAULT_RIGHT  "/roms"
+#define FILE_SYSTEM         "/dev/mtdblock3"
 #else
 // Keys for PC keyboard
 #define MYKEY_UP            SDLK_UP
