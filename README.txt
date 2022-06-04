@@ -50,9 +50,9 @@ Controls
 
 o D-pad         Move
 o L/R           Page up/page down
-o A             For a directory: open
+o B             For a directory: open
                 For a file: view or execute
-o B             Go to parent directory / cancel
+o A             Go to parent directory / cancel
 o Hint             System actions:
                   - Select all items
                   - Select no items
